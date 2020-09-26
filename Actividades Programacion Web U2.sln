@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30413.136
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Actividad 3 Navegacion Paginas web", "Actividad 3 Navegacion Paginas web\Actividad 3 Navegacion Paginas web.csproj", "{3B836C63-D4F4-45FB-AA6E-6A78CFA8E56D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Actividad 3 Navegacion Paginas web", "Actividad 3 Navegacion Paginas web\Actividad 3 Navegacion Paginas web.csproj", "{3B836C63-D4F4-45FB-AA6E-6A78CFA8E56D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Actividad 4 Routing", "Actividad 4 Routing\Actividad 4 Routing.csproj", "{80749D04-876A-4780-B530-3514C7D9A2D5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{3B836C63-D4F4-45FB-AA6E-6A78CFA8E56D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3B836C63-D4F4-45FB-AA6E-6A78CFA8E56D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3B836C63-D4F4-45FB-AA6E-6A78CFA8E56D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{80749D04-876A-4780-B530-3514C7D9A2D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80749D04-876A-4780-B530-3514C7D9A2D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{80749D04-876A-4780-B530-3514C7D9A2D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80749D04-876A-4780-B530-3514C7D9A2D5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

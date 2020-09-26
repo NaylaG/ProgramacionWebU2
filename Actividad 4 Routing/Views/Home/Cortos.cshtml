@@ -1,0 +1,29 @@
+﻿@model Actividad_4_Routing.Models.CortoViewModel
+@{
+    Layout = "_Layout";
+}
+
+<div id="principalPeliculas">
+
+    <div id="pelis">
+        @foreach (var categoria in Model.Categorias)
+        {
+            <h1>@categoria.Nombre</h1>
+            @foreach (var corto in categoria.Cortometraje)
+            {
+                <div>
+                    <a class="imgPelicula" href="~/Cortometrajes/@corto.Nombre.Replace(" ","_")">
+                        <img src="~/images/portadas/@(corto.Id)_pc.jpg" alt="@corto.Nombre">
+                    </a>
+                    <div class="nombrePelicula">
+                        <p>
+                            @corto.Nombre
+                        </p>
+                    </div>
+                </div>
+            }
+        }
+
+    </div>
+</div>
+
