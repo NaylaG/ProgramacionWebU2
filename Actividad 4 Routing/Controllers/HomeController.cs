@@ -12,6 +12,7 @@ namespace Actividad_4_Routing.Controllers
 {
     public class HomeController : Controller
     {
+        [Route("")]
         public IActionResult Index()
         {
             ViewBag.Inicio = "selected";
@@ -23,14 +24,17 @@ namespace Actividad_4_Routing.Controllers
         {
             pixarContext contexto = new pixarContext();
             ViewBag.Peliculas = "selected";
+            //ViewBag.Nombre = "Peliculas";
             var peliculas = contexto.Pelicula.OrderBy(x => x.Nombre);
-            if(peliculas==null)
+
+            if (peliculas==null)
             {
                 return RedirectToAction("Index");
             }
             else
             {
                 return View(peliculas);
+                
             }
            
         }
@@ -74,6 +78,7 @@ namespace Actividad_4_Routing.Controllers
             pixarContext contexto = new pixarContext();
             CortoViewModel cvm = new CortoViewModel();
             cvm.Categorias = contexto.Categoria.Include(x => x.Cortometraje).OrderBy(x => x.Nombre);
+            
             ViewBag.Cortos = "selected";
             if (cvm.Categorias==null)
             {
@@ -82,6 +87,8 @@ namespace Actividad_4_Routing.Controllers
             else
             {
                 return View(cvm);
+                
+              
             }
            
             

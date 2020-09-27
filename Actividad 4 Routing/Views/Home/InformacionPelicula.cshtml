@@ -13,7 +13,7 @@
     </div>
     <div class="datosPelicula">
         <h1>@Model.Nombre</h1>
-        <h2>@Model.NombreReal • @Model.FechaEstreno.Value.Day @Model.FechaEstreno.Value.Month. @Model.FechaEstreno.Value.Year</h2>
+        <h2>@Model.NombreReal • @Model.FechaEstreno.Value.Date.ToString("dd MMM yyyy")
             <p>
                @Model.Descripcion     
             </p>
