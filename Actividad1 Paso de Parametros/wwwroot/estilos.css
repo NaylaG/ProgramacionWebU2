@@ -1,0 +1,19 @@
+﻿html {
+    background-color: gainsboro;
+    font-family: Arial;
+}
+body {
+    text-align:center;
+   
+}
+h1 {
+    text-align: center;
+    color: Highlight;
+}
+h2 {
+    text-align: center;
+}
+label{
+    margin:5px;
+}
+

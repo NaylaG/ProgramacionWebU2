@@ -1,0 +1,14 @@
+﻿@model Actividad1_Paso_de_Parametros.Models.Numeros
+@{
+    Layout = "_Layout";
+}
+<h2>Suma de números</h2>
+<form method="post" action="~/Numeros/Resultado">
+    <fieldset>
+        <legend>Numeros a sumar</legend>
+        <label>Numero 1:</label><input name="Num1" /><br />
+        <label>Numero 2:</label><input name="Num2" /><br />
+        <input type="submit" value="Sumar" />
+
+    </fieldset>
+</form>
